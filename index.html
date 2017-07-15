@@ -62,8 +62,8 @@
             <h2 class="l-title">Решаем юридические проблемы</h2>
             <p class="l-text">Мы&nbsp;&mdash; юридическая компания AV&rsquo;s Company, представляем интересы в&nbsp;службах общей юрисдикции, арбитражных и&nbsp;третейских судах.</p>
             <div class="l-company__wrap-button h-mt-45">
-              <a class="l-form__button_label js-popup h-mr-10" href="#popup_call">Заказать звонок</a>
-              <a href="price.html" class="l-form__button_label-black h-ml-10">Показать услуги</a>
+              <a class="l-form__button_label l-no-margin js-popup h-mr-10" href="#popup_call">Заказать звонок</a>
+              <a href="price.html" class="l-form__button_label-black l-no-margin h-ml-10">Показать услуги</a>
             </div>
           </div>
           <div class="l-tri-3"></div>
@@ -135,22 +135,22 @@
           <div class="l-form__wrapper">
             <h2 class="l-title h-mt-15">Оставьте заявку</h2>
             <p class="l-text">Мы вам перезвоним и попробуем решить вашу юридическую проблему</p>
-            <form name="form" action="checking.php" method="POST">
+            <form name="form" action="send.php" method="POST">
               <div class="l-form__wrap_input">
                 <div class="l-form__input_block">
                   <label class="l-form__label" for="name">Как вас зовут?</label>
-                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text h-mr-20" id="name" type="text" name="" value="">
+                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text h-mr-20" id="name" type="text" name="name" value="">
                 </div>
                 <div class="l-form__input_block">
                   <label class="l-form__label" for="number">Телефон</label>
-                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number h-mr-20" id="number" type="text" name="" value="">
+                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number h-mr-20" id="number" type="text" name="phone" value="">
                 </div>
                 <div class="l-form__input_block">
                   <label class="l-form__label" for="mail">Эл. почта</label>
-                  <input placeholder=" name@mail.ru" class="l-form__input js-input-mail" id="mail" type="mail" name="" value="">
+                  <input placeholder=" name@mail.ru" class="l-form__input js-input-mail" id="mail" type="email" name="email" value="">
                 </div>
               </div>
-              <a class="l-form__button_label js-input-button h-ml--10">Отправить заявку</a>
+              <button class="l-form__button_label js-input-button h-ml--10">Отправить заявку</button>
               <p class="l-form__text">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных</p>
               </form>
           </div>
@@ -165,7 +165,8 @@
                 <p class="l-footer-text">Юридическая компания</p>
               </div>
               <div class="l-footer__right-block">
-                <p class="l-footer-text">8 (343) 212-34-56</p>
+                <p class="l-footer-text">+7 (343) 206-51-52</p>
+                <p class="l-footer-text">+7 992 330-43-42</p>
                 <p class="l-footer-text">support@avscompany.ru</p>
               </div>
             </div>
@@ -269,22 +270,22 @@
       <div id="popup_call" class="mfp-hide l-popup_call">
         <h1 class="l-title_2 h-mb-20">Заказ звонка</h1>
         <p class="l-text h-mb-15">Мы&nbsp;вам перезвоним и&nbsp;попробуем решить вашу юридическую проблему</p>
-        <form name="form" class="l-form__popup" action="checking.php" method="POST">
+        <form name="form" class="l-form__popup" action="send.php" method="POST">
               <div class="l-form__wrap_input l-popap_wrap-input h-mb-20">
                 <div class="l-form__input_block l-popap_input">
                   <label class="l-form__label" for="name">Как вас зовут?</label>
-                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text h-mr-20" id="name" type="text" name="" value="">
+                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text h-mr-20" id="name" type="text" name="name" value="">
                 </div>
                 <div class="l-form__input_block l-popap_input">
                   <label class="l-form__label" for="number">Телефон</label>
-                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number h-mr-20" id="number" type="text" name="" value="">
+                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number h-mr-20" id="number" type="text" name="number" value="">
                 </div>
                 <div class="l-form__input_block l-popap_input">
                   <label class="l-form__label" for="mail">Эл. почта</label>
-                  <input placeholder=" name@mail.ru" class="l-form__input js-input-mail" id="mail" type="mail" name="" value="">
+                  <input placeholder=" name@mail.ru" class="l-form__input js-input-mail" id="mail" type="email" name="email" value="">
                 </div>
               </div>
-              <a class="l-form__button_label l-popup__button js-input-button h-ml--10">Отправить заявку</a>
+              <button class="l-form__button_label l-popup__button js-input-button">Отправить заявку</button>
               <p class="l-form__text">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных</p>
         </form>
       </div>

@@ -237,19 +237,19 @@
 
       <div id="popup_back" class="mfp-hide l-popup_call">
         <h1 class="l-title_2 h-mb-20">Отправка отзыва</h1>
-        <form name="form" class="l-form__popup" action="checking.php" method="POST">
+        <form name="form" class="l-form__popup" action="send.php" method="POST">
               <div class="l-form__wrap_input l-popap_wrap-input h-mb-20">
                 <div class="l-form__input_block l-popap_input">
                   <label class="l-form__label" for="name">Как вас зовут?</label>
-                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text h-mr-20" id="name" type="text" name="" value="">
+                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text h-mr-20" id="name" type="text" name="name" value="">
                 </div>
                 <div class="l-form__input_block l-popap_input">
                   <label class="l-form__label" for="number">Телефон</label>
-                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number h-mr-20" id="number" type="text" name="" value="">
+                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number h-mr-20" id="number" type="text" name="phone" value="">
                 </div>
                 <div class="l-form__input_block l-popap_input">
                   <label class="l-form__label" for="mail">Отзыв</label>
-                  <input placeholder=" Ваш отзыв" class="l-form__input js-input-mail" id="mail" type="mail" name="" value="">
+                  <input placeholder=" Ваш отзыв" class="l-form__input js-input-mail" id="mail" type="email" name="email" value="">
                 </div>
               </div>
               <button class="l-form__button_label l-popup__button js-input-button h-ml--10">Отправить заявку</button>

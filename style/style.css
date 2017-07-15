@@ -738,6 +738,8 @@ transform: rotate(-45deg);
   display: flex;
   justify-content: space-between;
   margin-bottom: 35px;
+/*  margin-right: 10px;
+  margin-left: 10px;*/
 }
 
 .l-form__input{
@@ -781,7 +783,7 @@ transform: rotate(-45deg);
 }
 
 .l-form__input_block{
-  width: 31%;
+  width: 30%;
   text-align: left;
 }
 .l-form__text {
@@ -810,7 +812,9 @@ transform: rotate(-45deg);
 
 .l-footer__contacts{
   display: flex;
-  justify-content: space-between;}
+  justify-content: space-between;
+  align-items: flex-end;
+}
 
 .l-footer-text{
   font-size: 16px;
@@ -917,6 +921,7 @@ transform: rotate(-45deg);
 .l-requisites__column{
   max-width: 400px;
   margin-bottom: 40px;
+  width: 50%;
 }
 
 .l-requisites__title{
@@ -972,6 +977,12 @@ transform: rotate(-45deg);
 .l-form__popup{
   display: flex;
   flex-direction: column;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.l-br{
+  display: none;
 }
 
 @media screen and (max-width: 1030px){
@@ -996,8 +1007,9 @@ transform: rotate(-45deg);
     flex-direction: column;
   }
   .l-requisites__column{
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: auto !important;
+    margin-left: auto !important;
+    width: 100%;
   }
   .dots__wrapper{
     left: 46%;
@@ -1058,13 +1070,13 @@ transform: rotate(-45deg);
     padding-top: 33px;
     padding-left: 15%;
   }
-  .l-form__button_label,
+/*  .l-form__button_label,
   .l-form__button_label-black{
     margin-left: 0 !important;
     margin-right: 0 !important;
     display: block;
     margin-bottom: 25px;
-  }
+  }*/
 }
 
 
@@ -1118,6 +1130,14 @@ transform: rotate(-45deg);
     padding-top: 50px;
     padding-bottom: 50px;
   }
+/*  .l-form__button_label,
+  .l-form__button_label-black{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    display: block;
+    margin-bottom: 25px;
+    width: 100%;
+  }*/
 }
 
 @media screen and (max-width: 620px){
@@ -1193,6 +1213,13 @@ transform: rotate(-45deg);
     display: block;
     margin: 0;
   }
+  button {
+    width: 100%;
+  }
+  .l-no-margin{
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
 
   .l-form__button_label-black{
     display: block;
@@ -1211,6 +1238,7 @@ transform: rotate(-45deg);
   }
   .l-footer__contacts{
     flex-direction: column;
+    align-items: flex-start;
   }
   .l-footer__right-block{
     text-align: left;
@@ -1251,9 +1279,6 @@ transform: rotate(-45deg);
   .l-requisites__date{
     width: 100%;
   }
-}
-
-@media screen and (max-width: 440px){
   .l-services__item{
     background-position-y: 17px;
   }
@@ -1329,10 +1354,6 @@ transform: rotate(-45deg);
 hr {
   margin-top: 20px;
   margin-bottom: 20px;
-}
-
-.l-br{
-  display: none;
 }
 
 .l-price__hr{
