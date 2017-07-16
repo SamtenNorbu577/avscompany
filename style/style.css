@@ -332,18 +332,18 @@ transform: rotate(-45deg);
   min-height: 980px;}
 
 .l-comand__wrapper{
-  max-width: 1040px;
+  max-width: 1140px;
   margin-left: auto;
   margin-right: auto;
   position: relative;
   z-index: 2;}
 
 .l-personal__wrapper{
-  max-width: 1000px;
+  max-width: 1100px;
   min-height: 660px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   padding-left: 20px;
   padding-right: 20px;
 }
@@ -355,6 +355,8 @@ transform: rotate(-45deg);
 
 .l-personal__item-wrap{
   margin-bottom: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .l-personal__pers-1{
