@@ -349,7 +349,7 @@ transform: rotate(-45deg);
 }
 
 .l-personal__item{
-  width: 318px;
+  max-width: 318px;
   height: 318px;
 }
 
@@ -1357,6 +1357,15 @@ transform: rotate(-45deg);
   }
     .l-menu-body__logo{
     min-height: 165px;
+  }
+  .l-personal__pers-1,
+  .l-personal__pers-2,
+  .l-personal__pers-3,
+  .l-personal__pers-4,
+  .l-personal__pers-5,
+  .l-personal__pers-6{
+    background-position-x: center;
+    height: 255px;
   }
 }
 
