@@ -1026,6 +1026,7 @@ transform: rotate(-45deg);
 
 .l-text__popup{
   text-indent: 20px;
+  text-align: justify;
 }
 
 .l-error-message{
