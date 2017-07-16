@@ -6,6 +6,7 @@ $(document).ready(function(){
       $nameDec = $('.js-input-text-name');
       $profDec = $('.js-input-text-prof');
       $callbackDec = $('.js-input-text-callback');
+      $error = $('.js-error-message');
 
       $regexpText = /^[а-яА-ЯёЁa-zA-Z0-9.\s\S ]+$/;
 
@@ -14,6 +15,7 @@ $(document).ready(function(){
       }
       else{
         $callbackDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
+        $error.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
       }
 
 
@@ -22,6 +24,7 @@ $(document).ready(function(){
       }
       else{
         $profDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
+        $error.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
       }
 
 
@@ -30,6 +33,7 @@ $(document).ready(function(){
       }
       else{
         $nameDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
+        $error.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
       }
   });
 });

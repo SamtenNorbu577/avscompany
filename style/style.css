@@ -751,7 +751,7 @@ transform: rotate(-45deg);
 .l-form__wrap_input{
   display: flex;
   justify-content: space-between;
-  margin-bottom: 35px;
+  margin-bottom: 15px;
 /*  margin-right: 10px;
   margin-left: 10px;*/
 }
@@ -780,6 +780,7 @@ transform: rotate(-45deg);
   cursor: pointer;
   text-decoration: none !important;
   font-size: 14px;
+  margin-top: 10px;
 }
 
 .l-form__button_label-black{
@@ -1025,6 +1026,13 @@ transform: rotate(-45deg);
 
 .l-text__popup{
   text-indent: 20px;
+}
+
+.l-error-message{
+  color: red;
+  text-align: center;
+  font-size: 14px;
+  display: none;
 }
 
 @media screen and (max-width: 1030px){
