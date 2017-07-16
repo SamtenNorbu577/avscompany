@@ -758,10 +758,12 @@ transform: rotate(-45deg);
 .l-form__input{
   border: 1px solid #B6B6B6;
   height: 40px;
-  width: 99%;
+  width: 97%;
   border-radius: 5px;
   font-size: 16px;
   margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .l-form__button{
@@ -1138,7 +1140,7 @@ transform: rotate(-45deg);
     flex-direction: column;
   }
   .l-form__input_block{
-    width: 100%;
+    width: 94.5%;
     margin-bottom: 20px;
   }
   .l-title{
@@ -1422,6 +1424,10 @@ hr {
   margin-top: 5px;
   margin-bottom: 5px;
   color: grey
+}
+
+textarea {
+  height: 100px !important;
 }
 /*.panorama {
   height: 400px;

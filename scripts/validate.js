@@ -8,8 +8,8 @@ $(document).ready(function(){
       $mailDec = $('.js-input-mail');
 
       $regexpMail = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-      $regexpNumber = /^\(?([0-9]{2})\)?([ .-]?)([0-9]{2})\2([0-9]{2})/;
-      $regexpText = /^[а-яА-ЯёЁa-zA-Z0-9]+$/;
+      $regexpNumber = /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/;
+      $regexpText = /^[а-яА-ЯёЁa-zA-Z0-9.\s\S ]+$/;
 
       if($regexpMail.test($mail)){
         $mailDec.css({'border-color': '#332479', 'box-shadow': '0 0 6px #332479'});

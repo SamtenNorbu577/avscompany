@@ -304,19 +304,19 @@
         <form name="form" class="l-form__popup" action="send.php" method="POST">
               <div class="l-form__wrap_input l-popap_wrap-input h-mb-20">
                 <div class="l-form__input_block l-popap_input">
-                  <label class="l-form__label" for="name">Как вас зовут?</label>
-                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text" id="name" type="text" name="name" value="">
+                  <label class="l-form__label" for="name_3">Как вас зовут?</label>
+                  <input placeholder=" Константин Константинович" class="l-form__input js-input-text-name" id="name_3" type="text" name="name" value="">
                 </div>
                 <div class="l-form__input_block l-popap_input">
-                  <label class="l-form__label" for="number">Телефон</label>
-                  <input placeholder=" +7 987 23-45-32" class="l-form__input js-input-number" id="number" type="text" name="phone" value="">
+                  <label class="l-form__label" for="name_4">Кем вы работаете?</label>
+                  <input placeholder=" Ваша профессия" class="l-form__input js-input-text-prof" id="name_4" type="text" name="phone" value="">
                 </div>
                 <div class="l-form__input_block l-popap_input">
-                  <label class="l-form__label" for="mail">Отзыв</label>
-                  <input placeholder=" Ваш отзыв" class="l-form__input js-input-mail" id="mail" type="email" name="email" value="">
+                  <label class="l-form__label" for="callback">Отзыв</label>
+                  <textarea placeholder=" Ваш отзыв" class="l-form__input js-input-text-callback" id="callback" type="text" name="email" value=""></textarea>
                 </div>
               </div>
-              <button class="l-form__button_label l-popup__button js-input-button h-ml--10">Отправить заявку</button>
+              <button class="l-form__button_label l-popup__button h-ml--10 js-input-callback-button">Отправить заявку</button>
               <p class="l-form__text">Нажимая на&nbsp;кнопку, вы&nbsp;соглашаетесь на&nbsp;обработку персональных данных</p>
         </form>
       </div>
@@ -324,5 +324,6 @@
       <script type="text/javascript" src="scripts/menu.js"></script>
       <script type="text/javascript" src="scripts/scripts.js"></script>
       <script type="text/javascript" src="scripts/validate.js"></script>
+      <script type="text/javascript" src="scripts/validate_callback.js"></script>
     </body>
 </html>
