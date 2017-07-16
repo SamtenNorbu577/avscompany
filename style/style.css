@@ -1140,7 +1140,7 @@ transform: rotate(-45deg);
     flex-direction: column;
   }
   .l-form__input_block{
-    width: 94.5%;
+    width: 99%;
     margin-bottom: 20px;
   }
   .l-title{
