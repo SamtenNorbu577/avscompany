@@ -40,7 +40,7 @@ $(document).ready(function(){
 
       if($regexpText.test($text) && $regexpNumber.test($number) && $regexpMail.test($mail)){
         $("form").submit(function() { //устанавливаем событие отправки для формы
-        // alert("Ваша заявка принята, мы свяжемся с вами в ближайшее время.");
+        alert("Мы свяжемся с вами в ближайшее время.");
         var form_data = $(this).serialize(); //собираем данные из формы
         $.ajax({
                 type: "GET", //Метод отправки
