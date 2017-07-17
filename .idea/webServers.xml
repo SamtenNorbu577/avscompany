@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="b986bc69-868c-4ab1-be03-14ee3d0d44c3" name="avscompany.ru" url="http://avscompany.ru">
+        <fileTransfer host="avscompany.ru" port="22" rootFolder="/var/www/web/sites/avscompany.ru" accessType="SFTP">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

@@ -39,15 +39,15 @@ $(document).ready(function(){
       }
 
       if($regexpText.test($text) && $regexpNumber.test($number) && $regexpMail.test($mail)){
-        $("#request").submit(function() { //устанавливаем событие отправки для формы
+        $("form").submit(function() { //устанавливаем событие отправки для формы
         var form_data = $(this).serialize(); //собираем данные из формы
         $.ajax({
-                type: "POST", //Метод отправки
+                type: "GET", //Метод отправки
                 url: "send.php", //путь до php фаила отправителя
                 data: form_data,
-                success: function() {
+                success: function(msg) {
                     //код в этом блоке выполняется при успешной отправке сообщения
-                    alert("Ваше сообщение отпрвлено!");
+                    alert("Ваше сообщение отпрвлено!" + msg);
                 }
             });
         });
