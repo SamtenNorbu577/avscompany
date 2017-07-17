@@ -40,7 +40,7 @@ $(document).ready(function(){
 
       if($regexpText.test($text) && $regexpNumber.test($number) && $regexpMail.test($mail)){
         $("form").submit(function() { //устанавливаем событие отправки для формы
-        alert("Ваша заявка принята, мы свяжемся с вами в ближайшее время.");
+        // alert("Ваша заявка принята, мы свяжемся с вами в ближайшее время.");
         var form_data = $(this).serialize(); //собираем данные из формы
         $.ajax({
                 type: "GET", //Метод отправки
@@ -48,7 +48,7 @@ $(document).ready(function(){
                 data: form_data,
                 success: function(msg) {
                     //код в этом блоке выполняется при успешной отправке сообщения
-                    alert("Ваше сообщение отпрвлено!" + msg);
+                    alert("Ваше сообщение отправлено!" + msg);
                 }
             });
         });
