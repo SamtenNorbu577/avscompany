@@ -8,7 +8,7 @@
 }
 
 .l-header{
-  height: 600px;
+  height: 800px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -19,24 +19,23 @@
 
 .l-header-general{
   background-image: url("../image/general.png");
-  background-position-y: -5px;
-  background-size: 100%;
+  background-size: 67%;
+  background-position-y: 0px;
 }
 
 .l-header-price{
   background-image: url("../image/price.jpg");
-  background-size: 65%;
+  background-size: 50%;
 }
 
 .l-header-company{
   background-image: url("../image/company-alt.jpg");
-  background-size: 75%;
-  background-position-y: 150px;
+  background-size: 55%;
 }
 
 .l-header-contacts{
   background-image: url("../image/contacts.png");
-  background-size: 100%;
+  background-size: 70%;
 }
 
 
@@ -1047,7 +1046,71 @@ transform: rotate(-45deg);
   font-size: 14px;
   display: none;
 }
+@media screen and (max-width: 2000px){
+  .l-header-general{
+  background-size: 76%;
+  }
 
+  .l-header-price{
+    background-size: 53%;
+  }
+
+  .l-header-company{
+    background-size: 50%;
+    background-position-y: 150px;
+  }
+
+  .l-header-contacts{
+    background-size: 66%;
+    background-position-y: 200px;
+  }
+}
+@media screen and (max-width: 1500px){
+  .l-header{
+    height: 700px;
+  }
+  .l-header-general{
+    background-size: 76%;
+    background-position-y: 55px;
+  }
+
+  .l-header-price{
+    background-size: 63%;
+  }
+
+  .l-header-company{
+    background-size: 63%;
+    background-position-y: 160px;
+  }
+
+  .l-header-contacts{
+    background-size: 76%;
+    background-position-y: 200px;
+  }
+}
+@media screen and (max-width: 1280px){
+  .l-header{
+    height: 600px;
+  }
+  .l-header-general{
+    background-size: 76%;
+    background-position-y: 55px;
+  }
+
+  .l-header-price{
+    background-size: 63%;
+  }
+
+  .l-header-company{
+    background-size: 63%;
+    background-position-y: 160px;
+  }
+
+  .l-header-contacts{
+    background-size: 76%;
+    background-position-y: 200px;
+  }
+}
 @media screen and (max-width: 1030px){
   .l-personal__wrapper{
     justify-content: space-around;
