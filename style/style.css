@@ -312,21 +312,21 @@ transform: rotate(-45deg);
   font-size: 28px;
   line-height: 36px;
   font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .l-title_3{
   font-size: 16px;
   line-height: 20px;
   font-family: 'Roboto', sans-serif;
-  font-weight: lighter;
+  font-weight: 400;
 }
 
 .l-text{
   font-size: 18px;
   margin-bottom: 30px;
   line-height: 22px;
-  font-weight: lighter;
+  font-weight: 300;
 }
 
 .l-comand{
@@ -913,6 +913,7 @@ transform: rotate(-45deg);
 
 .l-price__cost{
   margin-right: 30px;
+  font-weight: 400;
 }
 
 .l-price__cost_big{
@@ -924,6 +925,7 @@ transform: rotate(-45deg);
 .l-price__service{
   margin-left: 20px;
   text-align: left;
+  font-weight: 400;
 }
 
 .l-price__service_big{
@@ -931,9 +933,14 @@ transform: rotate(-45deg);
   width: 500px;
 }
 
+.l-form__label{
+  font-weight: 400;
+}
+
 .l-price__term{
   margin-left: auto;
   margin-right: 180px;
+  font-weight: 400;
 }
 
 .l-price__term_big{
@@ -1111,6 +1118,27 @@ transform: rotate(-45deg);
     background-position-y: 200px;
   }
 }
+@media screen and (max-width: 1100px){
+  .l-header-general{
+    background-size: 91%;
+    background-position-y: 31px;
+  }
+
+  .l-header-price{
+    background-size: 72%;
+    background-position-y: 136px;
+  }
+
+  .l-header-company{
+    background-size: 65%;
+    background-position-y: 200px;
+  }
+
+  .l-header-contacts{
+    background-size: 70%;
+    background-position-y: 245px;
+  }
+}
 @media screen and (max-width: 1030px){
   .l-personal__wrapper{
     justify-content: space-around;
@@ -1157,6 +1185,24 @@ transform: rotate(-45deg);
     text-align: center;
     margin-bottom: 20px;
   }
+  .l-header-general{
+    background-size: 99%;
+    background-position-y: 81px;
+  }
+
+  .l-header-price{
+    background-size: 94%;
+  }
+
+  .l-header-company{
+    background-size: 87%;
+    background-position-y: 153px;
+  }
+
+  .l-header-contacts{
+    background-size: 110%;
+    background-position-y: 190px;
+  }
 }
 
 @media screen and (max-width: 750px){
@@ -1178,10 +1224,6 @@ transform: rotate(-45deg);
   .l-header-general{
     background-image: url("../image/general_mobile.png");
   }
-  .l-header-general{
-    background-size: 100% !important;
-    background-position-y: 250px;
-  }
   .l-menu-body__logo_head{
     margin-top: 0px;
   }
@@ -1202,19 +1244,15 @@ transform: rotate(-45deg);
     padding-top: 33px;
     padding-left: 15%;
   }
-/*  .l-form__button_label,
-  .l-form__button_label-black{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    display: block;
-    margin-bottom: 25px;
-  }*/
 }
 
 
 @media screen and (max-width: 676px){
   .l-callback__img{
     left: 44%;
+  }
+  .l-title-mobile{
+    font-size: 22px !important;
   }
   .l-form__input{
     margin-right: 0px;
@@ -1262,14 +1300,24 @@ transform: rotate(-45deg);
     padding-top: 50px;
     padding-bottom: 50px;
   }
-/*  .l-form__button_label,
-  .l-form__button_label-black{
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-    display: block;
-    margin-bottom: 25px;
-    width: 100%;
-  }*/
+  .l-header-general{
+    background-size: 77%;
+    background-position-y: 236px;
+  }
+
+  .l-header-price{
+    background-size: 109%;
+  }
+
+  .l-header-company{
+    background-size: 111%;
+    background-position-y: 153px;
+  }
+
+  .l-header-contacts{
+    background-size: 125%;
+    background-position-y: 190px;
+  }
 }
 
 @media screen and (max-width: 620px){
@@ -1318,14 +1366,6 @@ transform: rotate(-45deg);
   .dots__wrapper{
     left: 38%;
   }
-  .l-header{
-    height: 650px;
-    background-size: 200%;
-    background-position-y: 200px;
-  }
-  .l-header-general{
-    background-position-y: 250px;
-  }
   .l-services__item{
     background-size: 12%;
   }
@@ -1341,6 +1381,25 @@ transform: rotate(-45deg);
   .l-header__menu{
     background-size: 42%;
     background-position-x: 18px;
+  }
+  .l-header-general{
+    background-size: 88%;
+    background-position-y: 248px;
+  }
+
+  .l-header-price{
+    background-size: 121%;
+    background-position-y: 207px;
+  }
+
+  .l-header-company{
+    background-size: 127%;
+    background-position-y: 195px;
+  }
+
+  .l-header-contacts{
+    background-size: 152%;
+    background-position-y: 197px;
   }
 }
 
@@ -1386,10 +1445,6 @@ transform: rotate(-45deg);
   .dots__wrapper{
     left: 35%;
   }
-  .l-header{
-    height: 600px;
-    background-size: 200%;
-  }
   .l-services__item{
     background-size: 16%;
     background-position-x: 17px;
@@ -1430,7 +1485,7 @@ transform: rotate(-45deg);
   .l-services__text{
     padding-left: 25%;
   }
-    .l-menu-body__logo{
+  .l-menu-body__logo{
     min-height: 165px;
   }
   .l-personal__pers-1,
@@ -1441,6 +1496,25 @@ transform: rotate(-45deg);
   .l-personal__pers-6{
     background-position-x: center;
     height: 255px;
+  }
+  .l-header-general{
+    background-size: 100%;
+    background-position-y: 293px;
+  }
+
+  .l-header-price{
+    background-size: 154%;
+  }
+
+  .l-header-company{
+    background-size: 154%;
+    background-position-y: 215px;
+  }
+
+  .l-header-contacts{
+    background-size: 173%;
+    background-position-y: 248px;
+    background-position-x: -153px;
   }
 }
 
