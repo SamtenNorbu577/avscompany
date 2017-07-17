@@ -65,6 +65,7 @@
   display: none;
   z-index: 5;
   top: 0;
+  padding-bottom: 200px;
 }
 
 .l-header__menu-body hr {
@@ -1372,6 +1373,9 @@ transform: rotate(-45deg);
   .l-menu-body__logo{
     min-height: 270px;
   }
+  .l-header__menu-body{
+    padding-bottom: 130px;
+  }
 }
 
 @media screen and (max-width: 530px){
@@ -1427,6 +1431,9 @@ transform: rotate(-45deg);
 
   .l-menu-body__logo{
     min-height: 195px;
+  }
+    .l-header__menu-body{
+    padding-bottom: 15px;
   }
 }
 
