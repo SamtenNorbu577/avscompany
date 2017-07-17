@@ -37,5 +37,20 @@ $(document).ready(function(){
         $textDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
         $error.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
       }
+
+      if($regexpText.test($text) && $regexpNumber.test($number) && $regexpMail.test($mail)){
+        $("#request").submit(function() { //устанавливаем событие отправки для формы
+        var form_data = $(this).serialize(); //собираем данные из формы
+        $.ajax({
+                type: "POST", //Метод отправки
+                url: "send.php", //путь до php фаила отправителя
+                data: form_data,
+                success: function() {
+                    //код в этом блоке выполняется при успешной отправке сообщения
+                    alert("Ваше сообщение отпрвлено!");
+                }
+            });
+        });
+      }
   });
 });

@@ -8,7 +8,7 @@
 }
 
 .l-header{
-  height: 700px;
+  height: 600px;
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
@@ -19,19 +19,24 @@
 
 .l-header-general{
   background-image: url("../image/general.png");
-   background-position-y: -5px;
+  background-position-y: -5px;
+  background-size: 100%;
 }
 
 .l-header-price{
-  background-image: url("../image/price.png");
+  background-image: url("../image/price.jpg");
+  background-size: 65%;
 }
 
 .l-header-company{
-  background-image: url("../image/company.png");
+  background-image: url("../image/company-alt.jpg");
+  background-size: 75%;
+  background-position-y: 150px;
 }
 
 .l-header-contacts{
   background-image: url("../image/contacts.png");
+  background-size: 100%;
 }
 
 
@@ -360,10 +365,17 @@ transform: rotate(-45deg);
 }
 
 .l-personal__pers-1{
-  background-image: url("../image/pers-1.png");}
+  background-image: url("../image/pers-1.jpg");
+  background-size: 106%;
+  background-position-x: -20px;
+}
 
 .l-personal__pers-2{
-  background-image: url("../image/pers-2.png");}
+  background-image: url("../image/pers-2.jpg");
+  background-size: 106%;
+  background-position-x: -20px;
+  background-position-y: -30px;
+}
 
 .l-personal__pers-3{
   background-image: url("../image/pers-3.jpg");
@@ -594,7 +606,7 @@ transform: rotate(-45deg);
 .l-callback__slide {
   background-color: #332479;
   min-height: 210px;
-  padding-top: 50px;
+  padding-top: 25px;
   padding-bottom: 70px;
   padding-left: 30px;
   padding-right: 30px;
