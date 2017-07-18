@@ -40,17 +40,20 @@ $(document).ready(function(){
 
       if($regexpText.test($text) && $regexpNumber.test($number) && $regexpMail.test($mail)){
         $("form").submit(function() { //устанавливаем событие отправки для формы
-        alert("Мы свяжемся с вами в ближайшее время.");
-        var form_data = $(this).serialize(); //собираем данные из формы
         $.ajax({
-                type: "GET", //Метод отправки
+                type: "POST", //Метод отправки
                 url: "send.php", //путь до php фаила отправителя
-                data: form_data,
-                success: function(msg) {
+                data: "name="+$text+"&phone="+$number+"&email="+$mail,
+                success: function() {
                     //код в этом блоке выполняется при успешной отправке сообщения
-                    alert("Ваше сообщение отправлено!" + msg);
+                    alert("Ваш запрос успешно отправлен\n\rМы свяжемся с вами в ближайшее время");
+                },
+                error: function () {
+                    //код в этом блоке выполняется при ошибке отправки сообщения
+                    alert("Што-то пошло не так");
                 }
             });
+        return false;//Не отправлять submit формы
         });
       }
   });
