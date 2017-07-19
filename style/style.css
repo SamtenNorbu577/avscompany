@@ -1053,6 +1053,15 @@ transform: rotate(-45deg);
   text-align: center;
   font-size: 14px;
   display: none;
+  margin-bottom: 20px;
+}
+
+.l-success-message{
+  color: #332479;
+  text-align: center;
+  font-size: 16px;
+  display: none;
+  margin-bottom: 20px;
 }
 @media screen and (max-width: 2000px){
   .l-header-general{
@@ -1320,6 +1329,14 @@ transform: rotate(-45deg);
   .l-header-contacts{
     background-size: 125%;
     background-position-y: 190px;
+  }
+
+  .l-error-message{
+    margin-bottom: 30px;
+  }
+
+  .l-success-message{
+    margin-bottom: 30px;
   }
 }
 

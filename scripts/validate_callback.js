@@ -6,12 +6,17 @@ $(document).ready(function(){
       $nameDec = $('.js-input-text-name');
       $profDec = $('.js-input-text-prof');
       $callbackDec = $('.js-input-text-callback');
-      $error = $('.js-error-message');
+      $error = $('.js-error-message-call');
+      $success = $('.js-success-message-call');
+      $index1 = 0;
+      $index2 = 0;
+      $index3 = 0;
 
       $regexpText = /^[а-яА-ЯёЁa-zA-Z0-9.\s\S ]+$/;
 
       if($regexpText.test($callback)){
         $callbackDec.css({'border-color': '#332479', 'box-shadow': '0 0 6px #332479'});
+        $index1 = 1;
       }
       else{
         $callbackDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
@@ -21,6 +26,7 @@ $(document).ready(function(){
 
       if($regexpText.test($prof)){
         $profDec.css({'border-color': '#332479', 'box-shadow': '0 0 6px #332479'});
+        $index2 = 1;
       }
       else{
         $profDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
@@ -30,12 +36,14 @@ $(document).ready(function(){
 
       if($regexpText.test($name)){
         $nameDec.css({'border-color': '#332479', 'box-shadow': '0 0 6px #332479'});
+        $index3 = 1;
       }
       else{
         $nameDec.css({'border-color': 'red', 'box-shadow': '0 0 6px red'});
         $error.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
       }
-      if($regexpText.test($name) && $regexpText.test($prof) && $regexpText.test($callback)){
+      if(($index1 == 1) && ($index2 == 1) && ($index3 == 1)){
+          $success.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
           $("form").submit(function() { //устанавливаем событие отправки для формы
               $.ajax({
                   type: "POST", //Метод отправки
@@ -43,15 +51,16 @@ $(document).ready(function(){
                   data: "name="+$name+"&prof="+$prof+"&callback="+$callback,
                   success: function() {
                       //код в этом блоке выполняется при успешной отправке сообщения
-                      alert("Ваш отзыв успешно отправлен");
+                      // alert("Ваш отзыв успешно отправлен");
                   },
                   error: function () {
                       //код в этом блоке выполняется при ошибке отправки сообщения
-                      alert("Што-то пошло не так\n\rОтправка не удалась");
+                      alert("Что-то пошло не так\n\rОтправка не удалась");
                   }
               });
               return false;//Не отправлять submit формы
           });
       }
+      return false;
   });
 });
