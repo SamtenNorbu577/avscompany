@@ -12,7 +12,7 @@
   width: 100%;
   background-repeat: no-repeat;
   background-position: bottom;
-  background-color: #181b23;
+  background-color: #11141D;
   position: relative;
   background-position-y: 115px;
 }
@@ -1625,13 +1625,3 @@ button {
 .l-header-text a:visited{
   color: white !important; 
 }
-
-/*.panorama {
-  height: 400px;
-  overflow-x: scroll;
-  overflow-y: hidden;
-}
-
-.panorama img {
-  height: 100%;
-}*/
