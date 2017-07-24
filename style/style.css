@@ -355,7 +355,7 @@ transform: rotate(-45deg);
 
 .l-personal__item{
   max-width: 318px;
-  height: 318px;
+  height: 395px;
 }
 
 .l-personal__item-wrap{
@@ -366,38 +366,31 @@ transform: rotate(-45deg);
 
 .l-personal__pers-1{
   background-image: url("../image/pers-1.jpg");
-  background-size: 106%;
-  background-position-x: -20px;
+  background-size: 100%;
 }
 
 .l-personal__pers-2{
   background-image: url("../image/pers-2.jpg");
-  background-size: 106%;
-  background-position-x: -20px;
-  background-position-y: -30px;
+  background-size: 100%;
 }
 
 .l-personal__pers-3{
   background-image: url("../image/pers-3.jpg");
-  background-position-x: -4px;
-  background-size: 110%;
-  background-position-y: -17px;
+  background-size: 100%;
 }
 
 .l-personal__pers-4{
   background-image: url("../image/pers-4.jpg");
-  background-position-x: -50px;
-  background-size: 140%;
+  background-size: 100%;
 }
 
 .l-personal__pers-5{
   background-image: url("../image/pers-5.jpg");
-  background-size: 115%;
+  background-size: 105%;
 }
 
 .l-personal__pers-6{
   background-image: url("../image/pers-6.jpg");
-  background-position-y: -45px;
   background-size: 100%;
 }
 
@@ -1615,7 +1608,7 @@ hr {
 .l-price__hr{
   margin-top: 5px;
   margin-bottom: 5px;
-  color: grey
+  color: grey;
 }
 
 textarea {
