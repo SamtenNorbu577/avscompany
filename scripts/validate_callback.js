@@ -44,21 +44,18 @@ $(document).ready(function(){
       }
       if(($index1 == 1) && ($index2 == 1) && ($index3 == 1)){
           $success.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
-          $("form").submit(function() { //устанавливаем событие отправки для формы
-              $.ajax({
-                  type: "POST", //Метод отправки
-                  url: "send_review.php", //путь до php фаила отправителя
-                  data: "name="+$name+"&prof="+$prof+"&callback="+$callback,
-                  success: function() {
-                      //код в этом блоке выполняется при успешной отправке сообщения
-                      // alert("Ваш отзыв успешно отправлен");
-                  },
-                  error: function () {
-                      //код в этом блоке выполняется при ошибке отправки сообщения
-                      alert("Что-то пошло не так\n\rОтправка не удалась");
-                  }
-              });
-              return false;//Не отправлять submit формы
+          $.ajax({
+              type: "POST", //Метод отправки
+              url: "send_review.php", //путь до php фаила отправителя
+              data: "name="+$name+"&prof="+$prof+"&callback="+$callback,
+              success: function() {
+                  //код в этом блоке выполняется при успешной отправке сообщения
+                  // alert("Ваш отзыв успешно отправлен");
+              },
+              error: function () {
+                  //код в этом блоке выполняется при ошибке отправки сообщения
+                  alert("Что-то пошло не так\n\rОтправка не удалась");
+              }
           });
       }
       return false;
