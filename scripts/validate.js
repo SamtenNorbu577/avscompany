@@ -53,6 +53,7 @@ $(document).ready(function(){
                 url: "send.php", //путь до php фаила отправителя
                 data: "name="+$text+"&phone="+$number+"&email="+$mail,
                 success: function() {
+                    console.log("улетело");
                     //код в этом блоке выполняется при успешной отправке сообщения
                     // alert("Ваш запрос успешно отправлен\n\rМы свяжемся с вами в ближайшее время");
                 },
