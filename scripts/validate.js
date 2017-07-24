@@ -47,7 +47,7 @@ $(document).ready(function(){
      
       if(($index1 == 1) && ($index2 == 1) && ($index3 == 1)){
         $success.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
-        $("form").submit(function() { //устанавливаем событие отправки для формы
+        // $("form").submit(function() { //устанавливаем событие отправки для формы
         $.ajax({
                 type: "POST", //Метод отправки
                 url: "send.php", //путь до php фаила отправителя
@@ -61,8 +61,8 @@ $(document).ready(function(){
                     alert("Что-то пошло не так\n\rОтправка не удалась");
                 }
             });
-        return false;//Не отправлять submit формы
-        });
+        // return false;//Не отправлять submit формы
+        // });
       }
       return false;
   });
