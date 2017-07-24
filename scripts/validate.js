@@ -47,6 +47,7 @@ $(document).ready(function(){
      
       if(($index1 == 1) && ($index2 == 1) && ($index3 == 1)){
         $success.css({'display': 'block'}).delay(4000).queue(function () { $(this).css('display', 'none'); $(this).dequeue();});
+        console.log("1");
         // $("form").submit(function() { //устанавливаем событие отправки для формы
         $.ajax({
                 type: "POST", //Метод отправки
@@ -58,13 +59,17 @@ $(document).ready(function(){
                     // alert("Ваш запрос успешно отправлен\n\rМы свяжемся с вами в ближайшее время");
                 },
                 error: function () {
+                    console.log("2");
                     //код в этом блоке выполняется при ошибке отправки сообщения
                     alert("Что-то пошло не так\n\rОтправка не удалась");
                 }
             });
         // return false;//Не отправлять submit формы
         // });
+        console.log("3");
       }
+      console.log("4");
       return false;
+      console.log("5");
   });
 });
