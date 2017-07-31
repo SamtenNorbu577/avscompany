@@ -1,4 +1,4 @@
-function sec() {
-  alert("прошла секунда")
-}
-setInterval(sec, 3000);
+// function sec() {
+//   alert("прошла секунда")
+// }
+// setInterval(sec, 3000);
