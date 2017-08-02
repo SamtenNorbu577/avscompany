@@ -4,6 +4,11 @@ $(document).ready(function(){
 	    direction: "horizontal",
 	    animationTime: 700, 
 	    easing: "ease-out",       
-	    overlay: false            
-  	});
+			overlay: false,          
+		});
+			
+	function sec() {
+		
+	}
+	setInterval(sec, 3000);
 });
