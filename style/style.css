@@ -10,32 +10,34 @@
 .l-header{
   height: 800px;
   width: 100%;
-  background-repeat: no-repeat;
-  background-position: bottom;
   background-color: #11141D;
+  background-position: bottom;
   position: relative;
   background-position-y: 115px;
 }
 
 .l-header-general{
-  background-image: url("../image/general.png");
-  background-size: 67%;
-  background-position-y: 0px;
+  background-image: url("../image/banner/general.jpg");
+  background-size: 100%;
+  background-position-y: -264px;
 }
 
 .l-header-price{
-  background-image: url("../image/price.jpg");
-  background-size: 50%;
+  background-image: url("../image/banner/price.jpg");
+  background-size: 91%;
+  background-position-y: -64px;
 }
 
 .l-header-company{
-  background-image: url("../image/company-alt.jpg");
-  background-size: 55%;
+  background-image: url("../image/banner/company-alt.jpg");
+  background-size: 87%;
+  background-position-y: -71px;
 }
 
 .l-header-contacts{
-  background-image: url("../image/contacts.png");
-  background-size: 70%;
+  background-image: url("../image/banner/contacts.jpg");
+  background-size: 86%;
+  background-position-y: 1px;
 }
 
 
@@ -1058,21 +1060,22 @@ transform: rotate(-45deg);
 }
 @media screen and (max-width: 2000px){
   .l-header-general{
-  background-size: 76%;
+    background-size: 118%;
+    background-position-y: -238px;
   }
 
   .l-header-price{
-    background-size: 53%;
+    background-size: 113%;
   }
 
   .l-header-company{
-    background-size: 50%;
-    background-position-y: 150px;
+    background-size: 108%;
+    background-position-y: -47px;
   }
 
   .l-header-contacts{
-    background-size: 66%;
-    background-position-y: 200px;
+    background-size: 109%;
+    background-position-y: -26px;
   }
 }
 @media screen and (max-width: 1500px){
@@ -1080,22 +1083,22 @@ transform: rotate(-45deg);
     height: 700px;
   }
   .l-header-general{
-    background-size: 76%;
-    background-position-y: 55px;
+    background-size: 145%;
+    background-position-y: -226px;
   }
 
   .l-header-price{
-    background-size: 63%;
+    background-size: 132%;
   }
 
   .l-header-company{
-    background-size: 63%;
-    background-position-y: 160px;
+    background-size: 112%;
+    background-position-y: 32px;
   }
 
   .l-header-contacts{
-    background-size: 76%;
-    background-position-y: 200px;
+    background-size: 125%;
+    background-position-y: 18px;
   }
 }
 @media screen and (max-width: 1280px){
@@ -1103,43 +1106,43 @@ transform: rotate(-45deg);
     height: 600px;
   }
   .l-header-general{
-    background-size: 76%;
-    background-position-y: 55px;
+    background-size: 150%;
+    background-position-y: -180px;
   }
 
   .l-header-price{
-    background-size: 63%;
+    background-size: 140%;
   }
 
   .l-header-company{
-    background-size: 63%;
-    background-position-y: 160px;
+    background-size: 102%;
+    background-position-y: 87px;
   }
 
   .l-header-contacts{
-    background-size: 76%;
-    background-position-y: 200px;
+    background-size: 112%;
+    background-position-y: 71px;
   }
 }
 @media screen and (max-width: 1100px){
   .l-header-general{
-    background-size: 91%;
-    background-position-y: 31px;
+    background-size: 160%;
+    background-position-y: -155px;
   }
 
   .l-header-price{
-    background-size: 72%;
-    background-position-y: 136px;
+    background-size: 149%;
+    background-position-y: -5px;
   }
 
   .l-header-company{
-    background-size: 65%;
-    background-position-y: 200px;
+    background-size: 132%;
+    background-position-y: 92px;
   }
 
   .l-header-contacts{
-    background-size: 70%;
-    background-position-y: 245px;
+    background-size: 125%;
+    background-position-y: 79px;
   }
 }
 @media screen and (max-width: 1030px){
@@ -1150,6 +1153,9 @@ transform: rotate(-45deg);
     margin-left: 20px;
     margin-right: 20px;
     margin-bottom: 35px;
+  }
+  .l-header-general{
+    background-position-y: -109px;
   }
 }
 
@@ -1189,22 +1195,22 @@ transform: rotate(-45deg);
     margin-bottom: 20px;
   }
   .l-header-general{
-    background-size: 99%;
-    background-position-y: 81px;
+    background-size: 166%;
+    background-position-y: -25px;
   }
 
   .l-header-price{
-    background-size: 94%;
+    background-size: 188%;
   }
 
   .l-header-company{
-    background-size: 87%;
-    background-position-y: 153px;
+    background-size: 147%;
+    background-position-y: 81px;
   }
 
   .l-header-contacts{
-    background-size: 110%;
-    background-position-y: 190px;
+    background-size: 169%;
+    background-position-y: 59px;
   }
 }
 
@@ -1228,6 +1234,7 @@ transform: rotate(-45deg);
     background-image: url("../image/general_mobile.png");
     background-size: 68%;
     background-position-y: 251px;
+    background-repeat: no-repeat;
   }
   .l-menu-body__logo_head{
     margin-top: 0px;
@@ -1311,17 +1318,17 @@ transform: rotate(-45deg);
   }
 
   .l-header-price{
-    background-size: 109%;
+    background-size: 242%;
   }
 
   .l-header-company{
-    background-size: 111%;
-    background-position-y: 153px;
+    background-size: 204%;
+    background-position-y: 48px;
   }
 
   .l-header-contacts{
-    background-size: 125%;
-    background-position-y: 190px;
+    background-size: 190%;
+    background-position-y: 76px;
   }
 
   .l-error-message{
@@ -1404,18 +1411,18 @@ transform: rotate(-45deg);
   }
 
   .l-header-price{
-    background-size: 121%;
-    background-position-y: 207px;
+    background-size: 270%;
+    background-position-y: 74px;
   }
 
   .l-header-company{
-    background-size: 127%;
-    background-position-y: 195px;
+    background-size: 238%;
+    background-position-y: 84px;
   }
 
   .l-header-contacts{
-    background-size: 152%;
-    background-position-y: 197px;
+    background-size: 242%;
+    background-position-y: 71px;
   }
 }
 
@@ -1448,7 +1455,6 @@ transform: rotate(-45deg);
     padding-bottom: 15px;
   }
 }
-
 @media screen and (max-width: 440px){
   .l-callback__img{
     left: 40%;
@@ -1504,7 +1510,16 @@ transform: rotate(-45deg);
     background-position-y: 17px;
   }
 }
-
+@media screen and (max-width: 400px){
+  .l-header-company{
+    background-size: 273%;
+    background-position-y: 90px;
+  }
+  .l-header-contacts{
+    background-size: 280%;
+    background-position-y: 71px;
+  }
+}
 @media screen and (max-width: 345px){
   .l-services__item{
     background-size: 18%;
@@ -1530,18 +1545,17 @@ transform: rotate(-45deg);
   }
 
   .l-header-price{
-    background-size: 154%;
+    background-size: 357%;
   }
 
   .l-header-company{
-    background-size: 154%;
-    background-position-y: 215px;
+    background-size: 297%;
+    background-position-y: 88px;
   }
 
   .l-header-contacts{
-    background-size: 173%;
-    background-position-y: 248px;
-    background-position-x: -153px;
+    background-size: 319%;
+    background-position-y: 72px;
   }
 }
 

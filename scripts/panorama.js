@@ -6,9 +6,24 @@ $(document).ready(function(){
 	    easing: "ease-out",       
 			overlay: false,          
 		});
-			
+	var counter = 2;
 	function sec() {
-		
+		var back = document.getElementById('back');
+		var img1 = "url('image/banner/contacts.jpg')";
+		var img2 = "url('image/banner/contacts-2.jpg')"; 
+		var img3 = "url('image/banner/contacts-3.jpg')";
+		if(counter == 1){
+			back.style.backgroundImage = img1;
+			counter = 2;
+		}
+		else if(counter == 2){
+			back.style.backgroundImage = img2;
+			counter = 3;
+		}
+		else{
+			back.style.backgroundImage = img3;
+			counter = 1;
+		}
 	}
-	setInterval(sec, 3000);
+	setInterval(sec, 7000);
 });
