@@ -9,9 +9,9 @@ $(document).ready(function(){
 	var counter = 2;
 	function sec() {
 		var back = document.getElementById('back');
-		var img1 = "url('image/banner/contacts.jpg')";
-		var img2 = "url('image/banner/contacts-2.jpg')"; 
-		var img3 = "url('image/banner/contacts-3.jpg')";
+		var img1 = "url('image/banner/cont-1.jpg')";
+		var img2 = "url('image/banner/cont-2.jpg')"; 
+		var img3 = "url('image/banner/cont-3.jpg')";
 		if(counter == 1){
 			back.style.backgroundImage = img1;
 			counter = 2;
@@ -25,5 +25,5 @@ $(document).ready(function(){
 			counter = 1;
 		}
 	}
-	setInterval(sec, 7000);
+	setInterval(sec, 5000);
 });
