@@ -23,12 +23,12 @@
 }
 
 .l-header-price{
-  background-image: url("../image/banner/test-1.png");
+  background-image: url("../image/banner/price.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  /* background-size: 91%;
-  background-position-y: -64px; */
+   background-size: 91%;
+  background-position-y: -64px; 
 }
 
 .l-header-company{
@@ -38,13 +38,13 @@
 }
 
 .l-header-contacts{
-  background-image: url("../image/banner/cont-1.jpg");
+  background-image: url("../image/banner/cont-1-test.jpg");
   /* background-size: 86%;
   background-position-y: 1px; */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom;
-  height: 900px;
+  height: 1030px;
 }
 
 
@@ -1071,9 +1071,9 @@ transform: rotate(-45deg);
     background-position-y: -238px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 113%;
-  } */
+  } 
 
   .l-header-company{
     background-size: 108%;
@@ -1081,7 +1081,7 @@ transform: rotate(-45deg);
   }
  
    .l-header-contacts{
-    height: 800px;
+    height: 850px;
     /* background-size: 109%;
     background-position-y: -26px; */
   }  
@@ -1095,9 +1095,9 @@ transform: rotate(-45deg);
     background-position-y: -226px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 132%;
-  } */
+  } 
 
   .l-header-company{
     background-size: 112%;
@@ -1118,9 +1118,9 @@ transform: rotate(-45deg);
     background-position-y: -180px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 140%;
-  } */
+  } 
 
   .l-header-company{
     background-size: 102%;
@@ -1138,10 +1138,10 @@ transform: rotate(-45deg);
     background-position-y: -155px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 149%;
     background-position-y: -5px;
-  } */
+  } 
 
   .l-header-company{
     background-size: 132%;
@@ -1207,9 +1207,9 @@ transform: rotate(-45deg);
     background-position-y: -25px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 188%;
-  } */
+  } 
 
   .l-header-company{
     background-size: 147%;
@@ -1326,9 +1326,9 @@ transform: rotate(-45deg);
     background-position-y: 236px;
   }
 
-  .l-header-price{
+   /* .l-header-price{
     height: 500px;
-  } 
+  }   */
 
   .l-header-company{
     background-size: 204%;
@@ -1352,6 +1352,10 @@ transform: rotate(-45deg);
 @media screen and (max-width: 620px){
   .l-price__row-title{
     display: none;
+  }
+  .l-logo{
+    height: 90px;
+    background-size: 21%;
   }
   .l-price__service{
     font-weight: 700;
@@ -1422,10 +1426,10 @@ transform: rotate(-45deg);
     background-position-y: 248px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 270%;
     background-position-y: 74px;
-  } */
+  } 
 
   .l-header-company{
     background-size: 238%;
@@ -1441,6 +1445,9 @@ transform: rotate(-45deg);
 @media screen and (max-width: 480px){
   .l-services__item{
     background-size: 14%;
+  }
+  .l-logo{
+    background-size: 26%;
   }
   .l-form__button_label{
     display: block;
@@ -1466,8 +1473,13 @@ transform: rotate(-45deg);
   .l-header__menu-body{
     padding-bottom: 15px;
   }
-  .l-header-contacts{
+  /* .l-header-contacts{
     background-position-x: -313px;
+  } */
+}
+@media screen and (max-width: 475px){
+  .l-header-contacts{
+    height: 363px;
   }
 }
 @media screen and (max-width: 440px){
@@ -1524,23 +1536,21 @@ transform: rotate(-45deg);
   .l-services__item{
     background-position-y: 17px;
   }
-  .l-header-price{
+  /* .l-header-price{
     height: 400px;
-  }
+  } */
 }
 @media screen and (max-width: 400px){
   .l-header-company{
     background-size: 273%;
     background-position-y: 90px;
   }
-  /* .l-header-contacts{
+   /* .l-header-contacts{
     background-size: 280%;
     background-position-y: 71px;
-  } */
-}
-@media screen and (max-width: 475px){
-  .l-header-contacts{
-    height: 363px;
+  }  */
+  .l-logo{
+    background-size: 32%;
   }
 }
 @media screen and (max-width: 345px){
@@ -1567,9 +1577,9 @@ transform: rotate(-45deg);
     background-position-y: 293px;
   }
 
-  /* .l-header-price{
+   .l-header-price{
     background-size: 357%;
-  } */
+  } 
 
   .l-header-company{
     background-size: 297%;

@@ -25,5 +25,5 @@ $(document).ready(function(){
 			counter = 1;
 		}
 	}
-	setInterval(sec, 5000);
+	// setInterval(sec, 5000);
 });
