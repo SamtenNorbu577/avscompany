@@ -1074,10 +1074,9 @@ transform: rotate(-45deg);
     background-size: 125%;
   } 
 
-  /* .l-header-company{
-    background-size: 108%;
-    background-position-y: -47px;
-  } */
+   .l-header-company{
+    height: 1000px;
+  } 
  
    .l-header-contacts{
     height: 850px;
