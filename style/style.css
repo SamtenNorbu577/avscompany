@@ -68,7 +68,7 @@
 .l-header__menu-body{
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 165%;
   background-color: #332479;
   display: none;
   z-index: 5;
@@ -192,8 +192,33 @@ transform: rotate(-45deg);
 .l-nav{
   text-align: center;
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
 }
-
+.l-nav a {
+  margin-bottom: 15px;
+}
+.l-nav__wrap-dots{
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  bottom: 7%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.l-nav__dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #332479;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.l-nav__dot-active{
+  width: 12px;
+  height: 12px;
+}
 .l-link{
   font-size: 18px;
   color: white !important;
@@ -1075,11 +1100,11 @@ transform: rotate(-45deg);
   } 
 
    .l-header-company{
-    height: 1000px;
+    height: 825px;
   } 
  
    .l-header-contacts{
-    height: 850px;
+    height: 825px;
   }  
 }
 @media screen and (max-width: 1500px){
