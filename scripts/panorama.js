@@ -10,9 +10,9 @@ $(document).ready(function(){
 	function sec() {
 		var dots = document.getElementsByClassName('js-nav-dot');
 		var back = document.getElementById('back');
-		var img1 = "url('image/banner/cont-1.jpg')";
-		var img2 = "url('image/banner/cont-2.jpg')"; 
-		var img3 = "url('image/banner/cont-3.jpg')";
+		var img1 = "url('image/banner/cont-1.png')";
+		var img2 = "url('image/banner/cont-2.png')"; 
+		var img3 = "url('image/banner/cont-3.png')";
 		if(counter == 1){
 			back.style.backgroundImage = img1;
 			counter = 2;
